@@ -8,7 +8,7 @@ To use this app, its necessary a firebase account associated to the firebase dat
 The steps to have access to this db is:
 
 1. Install Firebase CLI following the steps on this [link](https://firebase.google.com/docs/cli#install-cli-windows)
-2. Execute this command: firebase login and following these steps 
+2. Execute this command: firebase login and following the steps 
 3. You should log in to the project only with the account we provide you
 4. Once you have access you should be able to see  the project pasanaq_sol  on your dashboard
 
