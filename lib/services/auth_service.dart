@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart' as auth;
+import 'package:flutter/cupertino.dart';
 import 'package:pasanaq_sol/models/user_model.dart';
 
 class AuthService {
@@ -20,6 +21,8 @@ class AuthService {
       String password,
   ) async {
     final credential = await _firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
+    final token = await credential.user?.getIdToken();
+    debugPrint('token: $token');
     return _userFromFirebase(credential.user);
   }
 
