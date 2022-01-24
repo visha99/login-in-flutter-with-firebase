@@ -37,8 +37,6 @@ class MyApp extends StatelessWidget {
           '/register': (context) => RegisterScreen(),
         },
       ),
-
-      //home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
 }

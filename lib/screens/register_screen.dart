@@ -36,13 +36,7 @@ class RegisterScreen extends StatelessWidget {
               ),
             ),
           ),
-          ElevatedButton(
-              onPressed: () async {
-                await authService.createUserWithEmailAndPassword(emailController.text, passwordController.text);
-                Navigator.pop(context);
-              },
-              child: Text('Register'),
-          )
+
         ],
       ),
     );

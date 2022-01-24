@@ -39,18 +39,16 @@ class LoginScreen extends StatelessWidget {
           ),
           ElevatedButton(
               onPressed: () {
-                authService.signInWithEmailAndPassword(
-                    emailController.text,
-                    passwordController.text,);
+                authService.signInWithEmailAndPassword(emailController.text, passwordController.text,);
               },
               child: Text('Login'),
           ),
-          ElevatedButton(
+          /*ElevatedButton(
               onPressed: () {
                 Navigator.pushNamed(context, '/register');
               },
               child: Text('Register'),
-          ),
+          ),*/
         ],
       ),
     );
