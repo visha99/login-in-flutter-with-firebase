@@ -53,3 +53,11 @@ WidgetsFlutterBinding.ensureInitialized();
     options: DefaultFirebaseOptions.currentPlatform,
   );
 ```
+## How to get the token
+Inside auth_service in the signInWithEmailAndPassword function you can get the token automatically, it will be saved in the token variable.
+```
+final token = await credential.user?.getIdToken();
+```
+
+
+
