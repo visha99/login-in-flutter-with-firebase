@@ -54,10 +54,11 @@ WidgetsFlutterBinding.ensureInitialized();
   );
 ```
 ## How to get the token
-Inside auth_service in the signInWithEmailAndPassword function you can get the token automatically, it will be saved in the token variable.
+To get the token use the following method:
 ```
 final token = await credential.user?.getIdToken();
 ```
+For more references you can see the file [auth_service](https://github.com/visha99/login-in-flutter-with-firebase/blob/develop/lib/services/auth_service.dart) 
 
 
 
