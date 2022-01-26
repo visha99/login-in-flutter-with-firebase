@@ -16,7 +16,7 @@ The steps to have access to this db is:
 4. Once you have access you should be able to see the project pasanaq_sol.
 
 ## Dependencies
-We need to add these dependencies in your file pubspec.yaml
+When you have already created your project created in flutter, you need to add these dependencies in your file pubspec.yaml
 -  cupertino_icons: ^1.0.2
 -  firebase_core: ^1.11.0
 -  firebase_auth: ^3.3.5
@@ -24,7 +24,7 @@ We need to add these dependencies in your file pubspec.yaml
 
 ## How to install Firebase
 
-When you have already created your project created in flutter, to install the FlutterFire CLI by running the following command:
+To install the FlutterFire CLI by running the following command:
 
   dart pub global activate flutterfire_cli
 
