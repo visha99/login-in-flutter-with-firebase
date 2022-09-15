@@ -15,7 +15,7 @@ The steps to have access to this db is:
 3. Log In in to the project with PasanaQ account 
 4. Once you have access you should be able to see the project pasanaq_sol.
 
-## Download and install the SDK Dart
+## Download and install the Flutter SDK
 For download and installa the SDK Dart following the steps on this [link](https://dart.dev/get-dart)
 
 ## Dependencies
