@@ -22,7 +22,7 @@ class AuthService {
   ) async {
     final credential = await _firebaseAuth.signInWithEmailAndPassword(email: email, password: password);
     final token = await credential.user?.getIdToken();
-    debugPrint('token: $token');
+    debugPrint('token: $token'); //Id Token of the User
     return _userFromFirebase(credential.user);
   }
 
