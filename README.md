@@ -56,11 +56,20 @@ WidgetsFlutterBinding.ensureInitialized();
     options: DefaultFirebaseOptions.currentPlatform,
   );
 ```
+
 ## How to get the token
-To get the token use the following method:
+In this repository we used the function signInWithEmailAndPassword from firebase authentication, for PasanaQSol-Service folow the next instructions
+
+Firts its neccesary call the endpoint https://us-central1-pasanaq-sol.cloudfunctions.net/app-sol/v1/get-token sending the userId on the request body for the get the customToken
+
+Then is neccesary do a login whith the method signInWithCustomToken(customToken)
+
+To get the idToken use the following method:
 ```
-final token = await credential.user?.getIdToken();
+final idToken = await credential.user?.getIdToken();
 ```
+This idToken will be used to make the different requests to PasanaQSol-Service 
+
 For more references you can see the file [auth_service](https://github.com/visha99/login-in-flutter-with-firebase/blob/develop/lib/services/auth_service.dart) 
 
 
